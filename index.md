@@ -1,6 +1,9 @@
 ---
 title: Integrated Solutions
-layout: home
+layout: default
 ---
 
-{{ content }}
+{% assign landingpage = site.posts | sort: 'order' %}
+{% for post in landingpage %}
+<div>{{ post.content }}</div>
+{% endfor %}
