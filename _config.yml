@@ -2,3 +2,11 @@ name: Integrated Solutions
 markdown: kramdown
 kramdown:
   input: GFM
+collections_dir: _collections
+collections:
+  - about
+  - services
+  - stats
+  - questions
+  - missionvisionvalues
+  - team_members
