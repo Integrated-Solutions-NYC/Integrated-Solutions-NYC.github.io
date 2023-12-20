@@ -1,18 +1,18 @@
 ---
 title: Integrated Solutions
-layout: home
+layout: default # home
 post_titles:
     - About
     - Services
-    - Stats
-    - Frequently Asked Questions
-    - Welcome
+    # - Stats
+    # - Frequently Asked Questions
+    # - Welcome
     - Team
 navigation:
   - text: About
     link: '#about'
-  # - text: Team
-  #   link: '#team'
+  #- text: Team
+  #  link: '#team'
   # - text: FAQ
   #   link: '#faq'
   - text: Services

@@ -1,0 +1,17 @@
+<nav id="navbar" class="navbar">
+    <ul>
+        {% for navitem in page.navigation %}
+            {% if navitem.dropdown %}
+                <li class="dropdown">
+                    <a href="#"><span>{{ navitem.text }}</span><i class="bi bi-chevron-right"></i></a>
+                    {% for ddi in navitem.dropdown %}
+                        <ul><li><a href="{{ ddi.link }}">{{ ddi.text }}</a></li></ul>
+                    {% endfor %}
+                </li>
+            {% else %}
+                <li><a class="nav-link scrollto" href="{{ navitem.link }}">{{ navitem.text }}</a></li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+    <i class="bi bi-list mobile-nav-toggle"></i>
+</nav>

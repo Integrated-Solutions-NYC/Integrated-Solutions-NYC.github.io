@@ -1,37 +1,24 @@
-<!-- Start About area -->
-<div id="about" class="about-area area-padding">
+<!-- ======= About Us Section ======= -->
+<section id="about" class="about">
     <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+        <h2>{{ page.title }}</h2>
+        <p>{{ page.heading }}</p>
+        </div>
+
         <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="section-headline text-center">
-                    <h2>About</h2>
-                </div>
+        <div class="col-lg-6" data-aos="fade-right">
+            <div class="image">
+            <img src="{{ page.image-link }}" class="img-fluid" alt="">
             </div>
         </div>
-        <div class="row">
-            <!-- single-well start-->
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="well-left">
-                    <div class="single-well">
-                        <a href="#">
-                            <img src="{{ page.image-link }}" alt="">
-                        </a>
-                    </div>
-                </div>
+        <div class="col-lg-6" data-aos="fade-left">
+            <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+                {{ page.content }}
             </div>
-            <!-- single-well end-->
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="well-middle">
-                    <div class="single-well">
-                        <a href="#">
-                        <h4 class="sec-head">{{ page.heading }}</h4>
-                        </a>
-                        <p>{{ page.content }}</p>
-                    </div>
-                </div>
-            </div>
-            <!-- End col-->
         </div>
+        </div>
+
     </div>
-</div>
-<!-- End About area -->
+</section><!-- End About Us Section -->

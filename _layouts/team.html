@@ -1,47 +1,38 @@
 <!-- Start team Area -->
-<div id="team" class="our-team-area area-padding">
+<section id="team" class="team">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="section-headline text-center">
-            <h2>{{ page.title }}</h2>
-          </div>
-        </div>
+
+      <div class="section-title" data-aos="fade-up">
+        <h2>{{ page.heading }}</h2>
+        <p>{{ page.content }}</p>
       </div>
+
       <div class="row">
-        <div class="team-top">
-            {% for member in page.members %}
-                <div class="col-md-3 col-sm-3 col-xs-12">
-                    <div class="single-team-member">
-                    <div class="team-img">
-                        <a href="#">
-                            <img src="{{ member.pict }}" alt="">
-                        </a>
-                        {% if member.links %}
-                            <div class="team-social-icon text-center">
-                                <ul>
-                                    {% for link in member.links %}
-                                    <li>
-                                    <a href="{{ link.url }}">
-                                        <i class="fa fa-{{ link.fa-icon }}"></i>
-                                    </a>
-                                    </li>
-                                    {% endfor %}
-                                </ul>
-                            </div>
-                        {% endif %}
-                    </div>
-                    <div class="team-content text-center">
-                        <h4>{{ member.name }}</h4>
-                        <h6>{{ member.role }}</h6>
-                        <p>{{ member.bio }}</p>
-                    </div>
-                    </div>
+
+        {% for member in page.members %}
+          <div class="col-lg-4 col-md-6 d-flex alighn-items-stretch">
+            <div class="member" data-aos="zoom-in" data-aos-delay="{{ member.order | minus: 1 | times: 100 }}">
+              <div class="member-img">
+                <img src="{{ member.pict }}"
+                  style="width: 100%; height: 100%"
+                  class="img-fliud"
+                  alt="{{ member.alt-text }}">
+                <div class="social">
+                  {% for link in member.links %}
+                    <a href="{{ link.url }}"><i class="bi bi-{{ link.icon }}"></i></a>
+                  {% endfor %}
                 </div>
-            {% endfor %}
-        </div>
+              </div>
+              <div class="member-info">
+                <h4>{{ member.name }}</h4>
+                <span>{{ member.role }}</span>
+                <p>{{ member.bio }}</p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+
       </div>
     </div>
-  </div>
-  <!-- End Team Area -->
-  
+</section>
+
