@@ -1,0 +1,73 @@
+
+<!-- Faq area start -->
+<div id="faq" class="faq-area area-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h2>Frequently Asked Questions</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="faq-details">
+            <div class="panel-group" id="accordion">
+                {% for faq in page.faq %}
+                    <!-- Panel Default -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="check-title">
+                                <a data-toggle="collapse" class="active" data-parent="#accordion" href="#check{{ faq.order }}">
+                                    <span class="acc-icons"></span>{{ faq.question }}
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="check{{ faq.order }}" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>{{ faq.answer }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="tab-menu">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                {% for mvvn in page.missionvisionvalues %}
+                    {% if mvvn.primary %}
+                    <li class="active">
+                    {% else %}
+                    <li>
+                    {% endif %}
+                <a href="#p-view-{{ mvvn.order }}" role="tab" data-toggle="tab">{{ mvvn.heading }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="tab-content">
+            {% for mvvc in page.missionvisionvalues %}
+            {% if mvvc.primary %}
+                <div class="tab-pane active" id="p-view-{{ mvvc.order }}">
+            {% else %}
+                <div class="tab-pane" id="p-view-{{ mvvc.order }}">
+            {% endif %}
+              <div class="tab-inner">
+                <div class="event-content head-team">
+                  <h4>{{ mvvc.heading }}</h4>
+                  <p>{{ mvvc.content }}</p>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      <!-- end Row -->
+    </div>
+  </div>
+  <!-- End Faq Area -->
+  
