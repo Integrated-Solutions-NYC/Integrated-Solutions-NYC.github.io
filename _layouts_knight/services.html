@@ -1,0 +1,27 @@
+<section id="services" class="services">
+    <div class="container">
+        <div class="section-title" data-aos="fade-up">
+            <h2>{{ page.title }}</h2>
+            <p>{{ page.heading }}</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 order-2 order-lg-1">
+                {% for service in page.services %}
+                    <div class="icon-box mt-5 mt-lg-0"
+                    data-aos="fade-up"
+                    data-aos-delay="{{ service.order | minus: 1 | times: 100 }}">
+                        <i class="bx bx-{{ service.icon }}"></i>
+                        <h4>{{ service.heading }}</h4>
+                        <p>{{ service.content }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+            <div
+                class="image col-lg-6 order-1 order-lg-2"
+                style="background-image: url('{{ page.image-link }}');"
+                data-aos="fade-left"
+                data-aos-delay="100">
+            </div>
+        </div>
+    </div>
+</section>
