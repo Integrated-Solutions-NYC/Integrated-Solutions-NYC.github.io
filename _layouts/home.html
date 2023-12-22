@@ -1,6 +1,10 @@
 ---
-layout: default
+layout: default 
 ---
+{% if site.bootstrapmade %}
+{% include {{ site.bootstrapmade }}_home.html %}
+{% else %}
+
 <div id="home" class="slider-area">
     <div class="bend niceties preview-2">
         <div id="ensign-nivoslider" class="slides">
@@ -85,3 +89,4 @@ layout: default
 <div>
 {{ content }}
 </div>
+{% endif %}

@@ -1,4 +1,9 @@
+{% if site.bootstrapmade %}
+{% include {{ site.bootstrapmade }}_{{ page.layout }}.html %}
+{% else %}
+
 <!-- Start About area -->
+
 <div id="about" class="about-area area-padding">
     <div class="container">
         <div class="row">
@@ -35,3 +40,16 @@
     </div>
 </div>
 <!-- End About area -->
+
+
+
+{% endif %}
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,6 @@
-
+{% if site.bootstrapmade %}
+{% include {{ site.bootstrapmade }}_{{ page.layout }}.html %}
+{% else %}
 <!-- Faq area start -->
 <div id="faq" class="faq-area area-padding">
     <div class="container">
@@ -70,4 +72,4 @@
     </div>
   </div>
   <!-- End Faq Area -->
-  
+  {% endif %}

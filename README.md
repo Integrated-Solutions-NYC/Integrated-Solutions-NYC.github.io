@@ -1,10 +1,6 @@
 # Integrated Solutions Website
 
-Our website is based on themes from:
-'''
-Author: BootstrapMade.com
-Author URL: https://bootstrapmade.com
-'''
+As the label says. We are writing a Jekyll based 'Chameleon' theme with the intent of making it easy to leave a website's content untouched while cycling through themes to change the look/feel.
 
 # Our Plan:
 
@@ -14,3 +10,8 @@ In an effort to master Jekyll we're converting the bootstrap themes to Jekyll te
 2. Use meaningful, common element names and IDs such that HTML need not be changed between themes
 3. Sections each have their own layout files, and themes may have contributions to sections, devise a system to map sections to themes to honor #1
 
+Our website is based on themes from:
+'''
+Author: BootstrapMade.com
+Author URL: https://bootstrapmade.com
+'''
