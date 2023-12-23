@@ -1,5 +1,5 @@
 {% if site.bootstrapmade %}
-{% include {{ site.bootstrapmade }}_{{ page.layout }}.html %}
+{% include {{ site.bootstrapmade }}/{{ page.layout }}.html %}
 {% else %}
 <!-- our-skill-area start -->
 <div class="our-skill-area fix hidden-sm">
@@ -14,9 +14,10 @@
             <div class="col-xs-12 col-sm-3 col-md-3 text-center">
               <div class="single-skill">
                 <div class="progress-circular">
-                  <input type="text"
+                  <input name="{{ stat.heading }}"
+                  type="text"
                   class="knob"
-                  value="0"
+                  value="{{ stat.value }}"
                   data-rel="{{ stat.value }}"
                   data-linecap="round" data-width="175"
                   data-bgcolor="#fff" data-fgcolor="#de4949"

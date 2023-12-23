@@ -1,0 +1,33 @@
+<!-- our-skill-area start -->
+<div class="our-skill-area fix hidden-sm">
+    <div class="test-overly"></div>
+    <div class="skill-bg area-padding-2">
+      <div class="container">
+        <!-- section-heading end -->
+        <div class="row">
+          <div class="skill-text">
+            {% for stat in page.stats %}
+            <!-- single-skill start -->
+            <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+              <div class="single-skill">
+                <div class="progress-circular">
+                  <input name="{{ stat.heading }}"
+                  type="text"
+                  class="knob"
+                  value="{{ stat.value }}"
+                  data-rel="{{ stat.value }}"
+                  data-linecap="round" data-width="175"
+                  data-bgcolor="#fff" data-fgcolor="#de4949"
+                  data-thickness=".20" data-readonly="true" disabled>
+                  <h3 class="progress-h4">{{ stat.heading }}</h3>{{ stat.content }}
+                </div>
+              </div>
+            </div>
+            <!-- single-skill end -->
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- our-skill-area end -->
