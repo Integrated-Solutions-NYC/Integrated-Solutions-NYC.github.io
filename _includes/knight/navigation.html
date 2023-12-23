@@ -3,10 +3,12 @@
         {% for navitem in page.navigation %}
             {% if navitem.dropdown %}
                 <li class="dropdown">
-                    <a href="#"><span>{{ navitem.text }}</span><i class="bi bi-chevron-right"></i></a>
-                    {% for ddi in navitem.dropdown %}
-                        <ul><li><a href="{{ ddi.link }}">{{ ddi.text }}</a></li></ul>
-                    {% endfor %}
+                    <a href=""><span>{{ navitem.text }}</span><i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                        {% for ddi in navitem.dropdown %}
+                            <li><a href="{{ ddi.link }}">{{ ddi.text }}</a></li>
+                        {% endfor %}
+                    </ul>
                 </li>
             {% else %}
                 <li><a class="nav-link scrollto" href="{{ navitem.link }}">{{ navitem.text }}</a></li>
