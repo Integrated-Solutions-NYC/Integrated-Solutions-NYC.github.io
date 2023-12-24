@@ -1,7 +1,7 @@
 ---
 title: Integrated Solutions
 layout: home # default # home
-post_titles:
+page_titles:
     - About
     - Services
 #    - Stats
@@ -27,7 +27,7 @@ navigation:
       link: 'https://sdxdomains.com'
 
 ---
-{% for title in page.post_titles %}
-  {% assign post = site.posts | where: 'title', title | first %}
+{% for title in page.page_titles %}
+  {% assign post = site.pages | where: 'title', title | first %}
   {{ post }}
 {% endfor %}
