@@ -30,8 +30,8 @@ services:
     content: Vetting vendors or evaluating engineers can be challenging, let our ethical experts act as your trusted advocates
 
 featured:
-  - heading: Targetting Lightbulb Moments
-    content: Ideas are a dime a dozen, our value generating ideas hit the mark, and frankly we don't care which executive yesman takes a fall.
+  - heading: Targetting Lightbulb Moments and Results
+    content: Ideas are a dime a dozen, the difference with us is not only that we hit the mark, our ideas materialize ideas in the form of results
     img: knight_assets/img/featured-1.png
 
   - heading: Driving Decisions with Data
