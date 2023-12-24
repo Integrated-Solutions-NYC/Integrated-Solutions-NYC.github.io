@@ -2,6 +2,6 @@ name: Integrated Solutions
 markdown: kramdown
 kramdown:
   input: GFM
-#bootstrapmade: knight
+bootstrapmade: knight
 collections:
   - pages

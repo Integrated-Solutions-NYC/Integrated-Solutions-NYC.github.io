@@ -2,7 +2,7 @@
 layout: about
 title: About
 heading: Who We Are
-image-link: img/about/4.jpeg
+img: img/about/4.jpeg
 ---
 
 Integrated Solutions is simply audocious: A company set to succeed by sheer virtue. 

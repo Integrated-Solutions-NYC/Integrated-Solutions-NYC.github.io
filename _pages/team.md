@@ -23,7 +23,7 @@ members:
     name: Ardy Hashem
     role: Orchestrator
     img: img/team/3.jpg
-    bio: Having 
+    bio: I simply love knowledge and technology, after stockpiling the former regarding the latter I'm ready to share the wealth
     links:
       - icon: linkedin
         url: https://www.linkedin.com/in/ardyhash/

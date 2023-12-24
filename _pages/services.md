@@ -35,7 +35,7 @@ featured:
     img: knight_assets/img/featured-1.png
 
   - heading: Driving Decisions with Data
-    content: In God we trust, all other must bring data.
+    content: '"In God we trust, all others must bring data" - credit elsewhere'
     img: knight_assets/img/featured-2.png
 
   - heading: Post Deployment Support
@@ -43,6 +43,6 @@ featured:
     img: knight_assets/img/featured-3.png
 
   - heading: Pay only for what you use
-    content: Seriously, we don't beleive in paying customers subsidizing growth
+    content: Seriously, we don't beleive in paying customers subsidizing prospective customer trials or salesmen.
     img: knight_assets/img/featured-4.png
 ---
