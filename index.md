@@ -1,6 +1,6 @@
 ---
 title: Integrated Solutions
-layout: home # default # home
+layout: default #home # default # home
 page_titles:
     - About
     - Services

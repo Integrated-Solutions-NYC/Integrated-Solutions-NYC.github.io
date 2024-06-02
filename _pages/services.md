@@ -7,7 +7,7 @@ img: img/services.jpeg
 services:
   - heading: Automation
     icon: terminal
-    content: Our Subject Matter Experts may help your organization automate using dormant capacity in existing resources
+    content: Allow our Subject Matter Experts help your organization automate using dormant capacity on existing resources
 
   - heading: Better Consulting
     icon: line-chart
@@ -15,13 +15,13 @@ services:
 
   - heading: Domain + eMail
     icon: laptop
-    content: Hop on over to Pop into our 24/7 <a href="https://sdxdomains.com">One Stop Shop</a> where All Basic Cloud, Domain, E-Mail Functionalities, and Website needs may be purchased on dedicated or shared plans
+    content: Hop on over to pop into our 24/7 <a href="https://sdxdomains.com">One Stop Shop</a> where All Basic Cloud, Domain, E-Mail Functionalities, and Website needs may be purchased on dedicated or shared plans
 
   - heading: Virtual CXO
     icon: briefcase
     content: Leverage decades of experience without retaining the associated payroll by consuming leadership insights on an as needed basis
 
-  - heading: Virtual PBX
+  - heading: Virtual Telephone and Call Center
     icon: phone
     content: Our bread and butter is providing <a href="https://link.waveapps.com/5uv7c7-yftq6g">Cloud based Virtual Private Branch Exchange IP communication services.</a> Buy a toll free number to start receiving calls today, or port in your existing number for a seamless migration
 
@@ -30,12 +30,13 @@ services:
     content: Vetting vendors or evaluating engineers can be challenging, let our ethical experts act as your trusted advocates
 
 featured:
-  - heading: Targetting Lightbulb Moments and Results
-    content: Ideas are a dime a dozen, the difference with us is not only that we hit the mark, our ideas materialize ideas in the form of results
+  - heading: On Target and Budget
+    content: A better business communication system doesn't need to breatk the bank, we have all the features you need, none of the bloat, all tailored towards your needs.
     img: knight_assets/img/featured-1.png
 
-  - heading: Driving Decisions with Data
-    content: '"In God we trust, all others must bring data" - credit elsewhere'
+  - heading: Drive Decisions with Data
+    content: |
+      "In God we trust, all others must bring data" - Every call is logged, recorded, and archived. Need to validate a patient or insurance agent conversation that happened a year ago? No problem, just find the call and listen to it!
     img: knight_assets/img/featured-2.png
 
   - heading: Post Deployment Support
