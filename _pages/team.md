@@ -23,7 +23,7 @@ members:
     name: Ardy Hashem
     role: Orchestrator
     img: img/team/3.jpg
-    bio: I simply love knowledge and technology, after stockpiling the former regarding the latter I'm ready to share the wealth
+    bio: I simply love knowledge and technology, after stockpiling the former in persuit of mastering the latter I'm ready to slow down and share the wealth
     links:
       - icon: linkedin
         url: https://www.linkedin.com/in/ardyhashem/
