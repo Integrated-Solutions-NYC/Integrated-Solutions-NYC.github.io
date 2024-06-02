@@ -26,5 +26,5 @@ members:
     bio: I simply love knowledge and technology, after stockpiling the former regarding the latter I'm ready to share the wealth
     links:
       - icon: linkedin
-        url: https://www.linkedin.com/in/ardyhash/
+        url: https://www.linkedin.com/in/ardyhashem/
 ---
